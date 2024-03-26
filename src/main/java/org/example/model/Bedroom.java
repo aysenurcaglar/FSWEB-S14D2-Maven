@@ -64,4 +64,20 @@ public class Bedroom {
     public Wardrobe getWardrobe() {
         return wardrobe;
     }
+
+    @Override
+    public String toString() {
+        return "Bedroom{" +
+                "name='" + name + '\'' +
+                ", \nwall1=" + wall1 +
+                ", \nwall2=" + wall2 +
+                ", \nwall3=" + wall3 +
+                ", \nwall4=" + wall4 +
+                ", \nceiling=" + ceiling +
+                ", \ncarpet=" + carpet +
+                ", \nbed=" + bed +
+                ", \nlamp=" + lamp +
+                ", \nwardrobe=" + wardrobe +
+                '}';
+    }
 }

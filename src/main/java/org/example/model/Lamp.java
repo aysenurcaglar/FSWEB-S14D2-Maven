@@ -3,14 +3,14 @@ package org.example.model;
 import org.example.model.enums.LampType;
 
 public class Lamp {
-    private LampType lampType;
+    private LampType style;
     private boolean battery;
-    private int globalRating;
+    private int globRating;
 
-    public Lamp(LampType lampType, boolean battery, int globalRating) {
-        this.lampType = lampType;
+    public Lamp(LampType style, boolean battery, int globRating) {
+        this.style = style;
         this.battery = battery;
-        this.globalRating = globalRating;
+        this.globRating = globRating;
     }
 
     public void turnOn() {
@@ -18,14 +18,23 @@ public class Lamp {
     }
 
     public LampType getStyle() {
-        return lampType;
+        return style;
     }
 
     public boolean isBattery() {
         return battery;
     }
 
-    public int getGlobalRating() {
-        return globalRating;
+    public int getGlobRating() {
+        return globRating;
+    }
+
+    @Override
+    public String toString() {
+        return "Lamp{" +
+                "style=" + style +
+                ", battery=" + battery +
+                ", globRating=" + globRating +
+                '}';
     }
 }
